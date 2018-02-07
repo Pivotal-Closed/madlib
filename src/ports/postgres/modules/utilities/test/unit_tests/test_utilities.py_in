@@ -1,3 +1,9 @@
+import sys
+from os import path
+# Add utilites module to the pythonpath.
+sys.path.append(path.dirname(path.dirname(path.dirname(path.abspath(__file__)))))
+
+
 import unittest
 from mock import *
 import sys

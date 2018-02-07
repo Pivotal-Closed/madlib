@@ -1,3 +1,8 @@
+import sys
+from os import path
+# Add utilites module to the pythonpath.
+sys.path.append(path.dirname(path.dirname(path.dirname(path.abspath(__file__)))))
+
 import unittest
 from mock import *
 import plpy_mock as plpy
@@ -146,7 +151,7 @@ class MinibatchQueryFormatterTestCase(unittest.TestCase):
 
     def test_get_dep_var_array_str_text_type(self):
         self.module.get_expr_type = MagicMock(return_value="text")
-        self.plpy_mock_execute.return_value = [{"class":22},{"class":100},{"class":0}]
+        self.plpy_mock_execute.return_value = [{"class":100},{"class":0},{"class":22}]
 
         dep_var_array_str = self.subject.get_dep_var_array_str(self.default_dep_var)
 
