@@ -1,4 +1,4 @@
-<h1> VMware has ended active development of this project, this repository will no longer be updated.</h1><br>![](doc/imgs/magnetic-icon.png?raw=True) ![](doc/imgs/agile-icon.png?raw=True) ![](doc/imgs/deep-icon.png?raw=True)
+![](doc/imgs/magnetic-icon.png?raw=True) ![](doc/imgs/agile-icon.png?raw=True) ![](doc/imgs/deep-icon.png?raw=True)
 =================================================
 **MADlib<sup>&reg;</sup>** is an open-source library for scalable in-database analytics.
 It provides data-parallel implementations of mathematical, statistical and
